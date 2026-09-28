@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> срс арайлым</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background: #ffe6f2;
+            color: #4a0e4e;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff0f6;
+            border: 4px dashed #ff007f;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 6px 6px 0px #ba005c;
+        }
+        h1 { color: #d8006c; text-shadow: 2px 2px #ffc2e0; margin-bottom: 5px; }
+        .card {
+            background: white;
+            border: 3px solid #ff66b2;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .icon { font-size: 60px; margin: 10px 0; }
+        .price { font-size: 22px; color: #d8006c; font-weight: bold; }
+        ul { text-align: left; background: #fff0f5; padding: 15px 30px; border-radius: 10px; }
+        button {
+            background: #ff007f;
+            color: white;
+            font-size: 20px;
+            font-family: inherit;
+            font-weight: bold;
+            padding: 10px 25px;
+            border: 3px solid black;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 3px 3px 0px #000;
+        }
+        button:hover { background: #ff3399; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ ВЕБ ПАРАҚША ✨</h1>
+    <p><b>Орындаған:</b> Балтабай Арайлым АЖ-336</p>
+
+    <div class="card">
+        <div class="icon">💻</div>
+        <p>Мен Балтабай Арайлым, Ақпараттық жүйелер мамандығы бойынша Қазақ Ұлттық Қыздар Педагогикалық университетінің 3-курс студентімін. Мен заманауи веб-технологиялар мен мобильді қосымшалар әзірлеуге қызығамын.</p>
+        
+        <ul>
+            <li> Менің дағдыларым</li>
+            <li> Бағдарламалау тілдері:</li>
+            <li>⭐ Python</li>
+            <li>⭐ C#</li>
+            <li> Web-технологиялар:</li>
+            <li>⭐ HTML</li>
+            <li>⭐ CSS</li>
+            <li>⭐ JavaScript</li>
+        </ul>
+
+        
+        <button onclick="buy()">бағалау</button>
+    </div>
+
+    <p style="font-size: 12px;"> <span id="count"></span> </p>
+</div>
+
+<script>
+    let cart = 0;
+    function buy() {
+        cart++;
+        document.getElementById('count').innerText = cart;
+        alert("Спасибо за оценку!");
+    }
+</script>
+
+</body>
+</html>
